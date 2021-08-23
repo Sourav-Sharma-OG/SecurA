@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SecurA</string>
+    <string name="no_account">Not have Account? <b>SignUp.</b></string>
+    <string name="title_activity_maps">Map</string>     <!-- Making SignUp Bold -->
+</resources>

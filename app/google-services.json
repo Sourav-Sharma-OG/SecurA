@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "35891222007",
+    "project_id": "secura-f155e",
+    "storage_bucket": "secura-f155e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35891222007:android:4145296bfdedb3f1e34af2",
+        "android_client_info": {
+          "package_name": "com.sourav1.secura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35891222007-uef0ggmnq1ehr2u772ddejehqrj44en4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sourav1.secura",
+            "certificate_hash": "117fa0498349b09f21044555387b237b5a2d7aba"
+          }
+        },
+        {
+          "client_id": "35891222007-cr2q60p960333ui4n3un7h1qri7hu80n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsFDeGVFRTRS4sTvkrCLUpVaol3Hxh-gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35891222007-cr2q60p960333ui4n3un7h1qri7hu80n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
