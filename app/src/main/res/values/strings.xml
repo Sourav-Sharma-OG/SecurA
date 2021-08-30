@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">SecurA</string>
     <string name="no_account">Not have Account? <b>SignUp.</b></string>
-    <string name="title_activity_maps">Map</string>     <!-- Making SignUp Bold -->
+    <string name="title_activity_maps">Map</string>
+    <string name="help">Help</string>     <!-- Making SignUp Bold -->
+
+    <string name="safetyMeasures"> ->Keep calm and get to safety.
+        \n\n ->Help others in any way you can, without putting yourself at risk.
+        \n\n ->Notify the emergency services if they are not already on the scene.
+        \n\n ->Keep yourself informed and follow any advice from the police or other authorities.</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.sourav1.secura
+package com.sourav1.secura.auth
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.sourav1.secura.MainActivity
+import com.sourav1.secura.R
 import com.sourav1.secura.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {

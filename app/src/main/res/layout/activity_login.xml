@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".auth.LoginActivity">
 
     <TextView
         android:id="@+id/titleLabelTv"

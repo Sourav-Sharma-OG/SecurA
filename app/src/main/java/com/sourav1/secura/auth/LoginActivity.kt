@@ -1,4 +1,4 @@
-package com.sourav1.secura
+package com.sourav1.secura.auth
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -9,7 +9,8 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
+import com.sourav1.secura.MainActivity
+import com.sourav1.secura.R
 import com.sourav1.secura.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {

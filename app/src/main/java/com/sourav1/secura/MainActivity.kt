@@ -18,6 +18,7 @@ import com.google.android.gms.location.LocationServices
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.sourav1.secura.auth.LoginActivity
 import com.sourav1.secura.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
