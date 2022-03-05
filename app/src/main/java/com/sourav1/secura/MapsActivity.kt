@@ -14,7 +14,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.android.gms.common.api.GoogleApiClient
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -29,7 +28,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLoca
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
-    private lateinit var googleApiClient:GoogleApiClient
 
 
     /**
@@ -101,7 +99,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLoca
         val geocoder: Geocoder = Geocoder(this, Locale.getDefault())
 
         val addresses:List<Address> = geocoder.getFromLocation(userLat!!, userLng!!, 1)
-        val address = addresses[0].getAddressLine(0);
+        val address = addresses[0].getAddressLine(0)
         val city = addresses[0].locality
         val state = addresses[0].adminArea
         val country = addresses[0].countryName
@@ -136,7 +134,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLoca
 
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
          == PackageManager.PERMISSION_GRANTED){
-            mMap.isMyLocationEnabled = true;
+            mMap.isMyLocationEnabled = true
         }
 
         else{

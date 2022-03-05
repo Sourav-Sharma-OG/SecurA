@@ -8,4 +8,15 @@
         \n\n ->Help others in any way you can, without putting yourself at risk.
         \n\n ->Notify the emergency services if they are not already on the scene.
         \n\n ->Keep yourself informed and follow any advice from the police or other authorities.</string>
+    <string name="login">Login</string>
+    <string name="login_to_you_account">Login to you account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="child_helpline_number">Child Helpline Number</string>
+    <string name="women_helpline_number">Women Helpline Number</string>
+    <string name="ambulance">AMBULANCE</string>
+    <string name="police_helpline_number">POLICE Helpline Number</string>
 </resources>

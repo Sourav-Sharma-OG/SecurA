@@ -1,5 +1,6 @@
 package com.sourav1.secura
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -48,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -56,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         //Configure ActionBar.
         actionBar = supportActionBar!!
         actionBar.title = "SecurA"
-        actionBar.setBackgroundDrawable(resources.getDrawable(R.drawable.bg_edt1))
+        actionBar.setBackgroundDrawable(resources.getDrawable(R.drawable.bg_splash))
 
         //init firebase auth and Firestore and DocumentReference
         firebaseAuth = FirebaseAuth.getInstance()

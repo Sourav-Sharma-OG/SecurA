@@ -2,12 +2,12 @@ package com.sourav1.secura.auth
 
 import android.app.ProgressDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.sourav1.secura.MainActivity
 import com.sourav1.secura.R
@@ -16,16 +16,16 @@ import com.sourav1.secura.databinding.ActivityLoginBinding
 class LoginActivity : AppCompatActivity() {
 
     //Binding
-    private lateinit var binding:ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
 
     //Action Bar
     private lateinit var actionBar: ActionBar
 
     //Progress Dialog
-    private lateinit var progressDialog:ProgressDialog
+    private lateinit var progressDialog: ProgressDialog
 
     //Firebase Authentication
-    private lateinit var firebaseAuth:FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
 
     //Email & Password
     private var email = ""
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
         //Configure Action Bar
         actionBar = supportActionBar!!
         actionBar.title = "Login"
-        actionBar.setBackgroundDrawable(resources.getDrawable(R.drawable.bg_edt1))
+        actionBar.setBackgroundDrawable(resources.getDrawable(R.drawable.bg_splash))
 
         //Configure ProgressDialog
         progressDialog = ProgressDialog(this)
@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
 
 
         //handle click, Not have account, SignUp? TV
-        binding.noAccountTv.setOnClickListener{
+        binding.noAccountTv.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
 
@@ -72,15 +72,13 @@ class LoginActivity : AppCompatActivity() {
         password = binding.passwordEt.text.toString().trim()
 
         //Validating Data
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //Invalid email format
             binding.emailEt.error = "Invalid email format!.."
-        }
-        else if(TextUtils.isEmpty(password)){
+        } else if (TextUtils.isEmpty(password)) {
             //No password Entered
             binding.passwordEt.error = "Please enter password!.."
-        }
-        else{
+        } else {
             //Data is validated, Begin Login Process..
             firebaseLogin()
         }
@@ -104,7 +102,7 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
-            .addOnFailureListener{
+            .addOnFailureListener {
                 //Login Failed, Dismiss the ProgressDialog
                 progressDialog.dismiss()
                 Toast.makeText(this, "Login falied due to ${it.message}", Toast.LENGTH_SHORT).show()
@@ -116,7 +114,7 @@ class LoginActivity : AppCompatActivity() {
         //get current user
 
         val firebaseUser = firebaseAuth.currentUser
-        if(firebaseUser != null){
+        if (firebaseUser != null) {
             //User is already logged in
             startActivity(Intent(this, MainActivity::class.java))
             finish()

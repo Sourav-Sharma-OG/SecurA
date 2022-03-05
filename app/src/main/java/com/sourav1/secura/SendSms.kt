@@ -60,27 +60,8 @@ class SendSms : AppCompatActivity() {
      */
 
     private fun sendMessage(){
-//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
-//            val subs:SubscriptionManager = getSystemService(Context.TELEPHONY_SUBSCRIPTION_SERVICE) as SubscriptionManager
-//
-//            if(subs != null) {
-//
-//                Log.d("Sim: ", "No. of sims: ${subs.activeSubscriptionInfoCountMax}")
-//
-//                if(subs.activeSubscriptionInfoCountMax > 1) {
-//
-//                    val smsManager1: SmsManager = SmsManager.getSmsManagerForSubscriptionId(0)
-//                    val smsManager2: SmsManager = SmsManager.getSmsManagerForSubscriptionId(1)
-//
-//                    smsManager1.sendTextMessage(number, null, "Sim 1", null, null)
-//                    smsManager2.sendTextMessage(number, null, "Sim 2", null, null)
-//                }
-//            }
-//        }
-
-
         val smsIntent = Intent(Intent.ACTION_VIEW)
-        smsIntent.setData(Uri.parse("smsto:" + number));
+        smsIntent.data = Uri.parse("smsto:$number");
         smsIntent.putExtra("sms_body", helpMessage)
         startActivity(smsIntent)
     }

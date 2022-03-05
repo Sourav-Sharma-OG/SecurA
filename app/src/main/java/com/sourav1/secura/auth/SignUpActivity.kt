@@ -50,7 +50,7 @@ class SignUpActivity : AppCompatActivity() {
         //Configure ActionBar
         actionBar = supportActionBar!!
         actionBar.title = "Sign Up"
-        actionBar.setBackgroundDrawable(resources.getDrawable(R.drawable.bg_edt1))
+        actionBar.setBackgroundDrawable(resources.getDrawable(R.drawable.bg_splash))
         //Enable back button
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
